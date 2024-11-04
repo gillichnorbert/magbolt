@@ -11,6 +11,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule } from '@angular/forms';
 import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
+import { LoginComponent } from './login/login.component';
 
 
 
@@ -20,7 +21,8 @@ import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
     ProductsListComponent,
     AdminProductListComponent,
     NavComponent,
-    HomeComponent
+    HomeComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
