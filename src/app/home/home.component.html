@@ -1,1 +1,14 @@
-<p>home works!</p>
+<img class="borito" src="https://static.streetkitchen.hu/live/uploads/2022/01/set-pecan-pistachios-almond-peanut-cashew-pine-nuts-lined-up-assorted-nuts-dried-fruits-mini-different-bowls-1618x855.jpg" alt="">
+<div class="container">
+    <h1>Termékek</h1>
+    <div *ngFor="let mag of magvak">
+        <div class="card" style="width: 18rem;">
+            <img [src]="mag.picture" class="card-img-top" alt="{{mag.name}}">
+            <div class="card-body">
+                <h5 class="card-title">{{mag.name}}</h5>
+                <p class="card-text">{{mag.price}} Ft</p>
+                <p class="card-text">{{mag.description}}</p>
+            </div>
+        </div>
+    </div>
+</div>
