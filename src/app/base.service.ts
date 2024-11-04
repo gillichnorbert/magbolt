@@ -11,11 +11,22 @@ export class BaseService {
     this.refMagvak=db.list('/products');
 
   }
+
   addProduct(magok:any) {
     this.refMagvak.push(magok);
   }
 
-  getPrdoucts() {
+  getProducts() {
     return this.refMagvak
   }
+
+  updateProduct(magok:any){
+    let key= magok.key
+    delete magok.key
+    this.refMagvak.update(key,magok)
+   }
+
+   deleteProduct(magok:any) {
+    this.refMagvak.remove(magok.key)
+   }
 }
