@@ -29,6 +29,7 @@ import { LoginComponent } from './login/login.component';
     BrowserModule,
     AppRoutingModule,
     NgbModule,
+    FormsModule,
     AngularFireDatabaseModule,
     AngularFireModule.initializeApp(environments.firebaseConfig),
   ],

@@ -1,1 +1,36 @@
-<p>admin-product-list works!</p>
+<div class="row my-3 fw-bold">
+    <div *ngFor="let n of columns" class="col">{{n.text}}</div>
+    <div class="col">Műveletek</div>
+</div>
+
+<div class="row my-3">
+    <div *ngFor="let n of columns" class="col">
+        <ng-container *ngIf="n.type=='textarea';else simainput">
+            <textarea  [(ngModel)]="newProduct[n.key]" class="form-control" rows="3"></textarea>
+        </ng-container>
+        <ng-template #simainput>
+            <input  [(ngModel)]="newProduct[n.key]" [type]="n.type" class="form-control">
+        </ng-template>  
+
+    </div>
+    <div class="col">
+        <button (click)="addProduct()" type="button" class="btn btn-primary">Hozzáad</button>
+    </div>
+</div>
+
+<div *ngFor="let mag of magvak" class="row">
+    <div *ngFor="let n of columns" class="col">
+        <ng-container *ngIf="n.type=='textarea';else simainput">
+            <textarea  [(ngModel)]="mag[n.key]" class="form-control" rows="3"></textarea>
+        </ng-container>
+        <ng-template #simainput>
+            <input  [(ngModel)]="mag[n.key]" [type]="n.type" class="form-control">
+        </ng-template>  
+
+    </div>
+    <div class="col">
+        <button (click)="updatedProduct(mag)" type="button" class="btn btn-primary">Ment</button>
+        <button (click)="deleteProduct(mag)" type="button" class="btn btn-danger">Töröl</button>
+    </div>
+</div>
+

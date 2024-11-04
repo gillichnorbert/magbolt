@@ -9,7 +9,6 @@ export class BaseService {
 
   constructor(private db: AngularFireDatabase) {
     this.refMagvak=db.list('/products');
-
   }
 
   addProduct(magok:any) {
