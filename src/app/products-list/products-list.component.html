@@ -1,8 +1,12 @@
-<div class="card" style="width: 18rem;">
-    <img src="https://kep.index.hu/1/0/3413/34133/341331/34133165_2613609_04214e0e386461a40129a9d1ec5fe8c2_wm.jpg" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text"></p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
+  <div class="container">
+    <h1>Termékek</h1>
+
+        <div class="card" style="width: 18rem;" *ngFor="let mag of magvak">
+            <img [src]="mag.picture" class="card-img-top" alt="{{mag.name}}">
+            <div class="card-body">
+                <h5 class="card-title">{{mag.name}}</h5>
+                <p class="card-text">{{mag.price}} Ft</p>
+                <p class="card-text">{{mag.description}}</p>
+            </div>
     </div>
   </div>

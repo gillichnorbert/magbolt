@@ -7,8 +7,8 @@ import { Component } from '@angular/core';
 })
 export class NavComponent {
   menuItems:any = [
-    {path:"home", text:"Home"},
-    {path:"products", text:"Products"},
-    {path:"login", text:"Login"} 
+    {path:"home", text:"Kezdőlap"},
+    {path:"products", text:"Termékek"},
+    {path:"login", text:"Bejelentkezés"} 
   ];
 }

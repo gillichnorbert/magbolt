@@ -8,6 +8,7 @@ import { map } from 'rxjs';
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
+
   magvak:any=[]
   columns=[
     {key:"name", text:"Név", type:'text'},

@@ -1,0 +1,18 @@
+.card {
+    margin: 10px;
+    display: inline-block;
+    width: 18rem;
+
+}
+
+.card img {
+    height: 15rem;
+}
+
+.card {
+    filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
+}
+.card:hover {
+    filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.4));
+}
+
