@@ -31,7 +31,7 @@ import { LoginComponent } from './login/login.component';
     NgbModule,
     FormsModule,
     AngularFireDatabaseModule,
-    AngularFireModule.initializeApp(environments.firebaseConfig),
+    AngularFireModule.initializeApp(environments.firebaseConfig)
   ],
   providers: [],
   bootstrap: [AppComponent]

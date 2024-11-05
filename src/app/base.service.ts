@@ -30,4 +30,7 @@ export class BaseService {
    deleteProduct(magok:any) {
     this.refMagvak.remove(magok.key)
    }
+
+
+   
 }
